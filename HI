@@ -1,0 +1,6 @@
+docker run -d --name=google-forms-vote-bot -e FORM_URL="https://forms.gle/UkdkRcmjDKAHHcHi9" 
+-e ENTRIES="NIKITA PELIZON" "EDOARDO DONNAMARIA" “ORIANA MARZOLI” “ANTONINO SPINALBESE” “MICOL INCORVAIA”
+--init --cap_add=SYS_ADMIN 
+MIN_WAIT_TIME=1
+MAX_WAIT_TIME=2
+docker.pkg.github.com/korti11/google-docs-vote-bot/google-forms-vote-bot:latest 
